@@ -191,6 +191,8 @@ body {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -301,6 +303,7 @@ body {
   width: 100%;
   height: 70px;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--third-theme-color);
@@ -597,7 +600,8 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-theme-color);
 
-  transition: box-shadow var(--transition-dur) var(--transition-func);
+  transition: box-shadow var(--transition-dur) var(--transition-func),
+    background-color var(--transition-dur) var(--transition-func);
 
   padding: 6px 22px;
   border: none;
